@@ -1,155 +1,79 @@
 # Intel Data Center Location Analysis
 
-## Project Overview
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat&logo=tableau&logoColor=white)
+![Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=flat&logo=microsoft-excel&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-This project was completed as part of the Intel Sustainability Analytics Portfolio Project. The objective was to identify the most suitable location for Intel's next data center by analyzing regional energy production, electricity demand, renewable energy adoption, and energy generation stability across the United States.
+> **Bottom line:** Analyzed regional US energy data across 6 interactive Tableau visualizations to recommend the **Northeast** as Intel's optimal data center location — driven by renewable energy leadership, energy surplus, and long-term sustainability metrics.
 
-Using Tableau, I developed a series of interactive visualizations and dashboards that enabled comparison of energy performance across regions and supported data-driven site selection decisions.
+📊 **[View Live Tableau Dashboard →](YOUR_TABLEAU_PUBLIC_LINK_HERE)**
 
 ---
 
 ## Business Problem
 
-Data centers require reliable and cost-effective energy supplies. Intel's Sustainability Team sought to identify regions capable of supporting future infrastructure investments while balancing operational efficiency and renewable energy goals.
+Data centers require massive, reliable, and cost-effective energy supplies. Intel's Sustainability Team needed to identify which US region could best support a new data center investment while balancing operational efficiency and renewable energy commitments.
 
-The analysis focused on answering the following questions:
+The analysis answered four key questions:
 
 - Which regions produce more energy than they consume?
-- Which regions have the highest renewable energy generation?
-- Which regions demonstrate stable energy supply and demand patterns?
-- Which location provides the strongest long-term opportunity for a new Intel data center?
+- Which regions lead in renewable energy generation?
+- Which regions show stable supply and demand patterns?
+- Which location offers the strongest long-term sustainability advantage?
 
 ---
 
-## Tools & Technologies
+## Visualizations Built
 
-- Tableau
-- Microsoft Excel
-- Data Visualization
-- Business Intelligence
-- Sustainability Analytics
+| #   | Visualization                   | Purpose                                                 |
+| --- | ------------------------------- | ------------------------------------------------------- |
+| 1   | Net Energy Production Analysis  | Identified regions with energy surplus vs. deficit      |
+| 2   | Supply & Demand by Region       | Compared generation vs. demand trends over time         |
+| 3   | Renewable Energy Analysis       | Ranked regions by % renewable (wind + solar + hydro)    |
+| 4   | Utility Power Source Breakdown  | Treemap of generation mix by source per region          |
+| 5   | Hourly Difference in Generation | Flagged optimal periods for energy-intensive operations |
+| 6   | Energy Source by Region         | Multi-line comparison of energy sources over time       |
 
----
-
-## Datasets
-
-### Energy Dataset
-
-The primary dataset included:
-
-- Net Generation
-- Demand
-- Solar Generation
-- Wind Generation
-- Hydropower & Pumped Storage
-- Region
-- Date & Time Information
-
-### Energy by Source Dataset
-
-The secondary dataset included:
-
-- Energy Source
-- Energy Generated (MW)
-- Balancing Authority
-- Region
-- Percent Difference in Generation
+All six visualizations are integrated into a single executive dashboard with dynamic filters for region and time aggregation (day / week / month).
 
 ---
-
-## Visualizations Created
-
-### 1. Net Energy Production Analysis
-
-Calculated net energy surplus using:
-
-Net Production = Net Generation − Demand
-
-This visualization identified regions producing excess electricity and regions dependent on imported energy.
-
----
-
-### 2. Supply and Demand by Region
-
-Interactive dual-axis chart comparing:
-
-- Energy Demand
-- Net Generation
-
-Users can analyze trends by day, week, or month and identify regions with stable electricity markets.
-
----
-
-### 3. Renewable Energy Analysis
-
-Calculated renewable generation percentage using:
-
-Renewable Percentage =
-(Wind + Solar + Hydropower) / Net Generation
-
-This visualization highlights regions leading the transition toward sustainable energy production.
-
----
-
-### 4. Utility Power Source Breakdown
-
-Treemap visualization displaying the composition of energy generation by source within each region.
-
----
-
-### 5. Hourly Difference in Generation
-
-Line chart illustrating hourly fluctuations in energy production, helping identify optimal periods for energy-intensive operations.
-
----
-
-### 6. Energy Source by Region
-
-Interactive multi-line visualization comparing energy sources over time for selected regions.
-
----
-
-## Dashboard
-
-The final dashboard integrates key visualizations into a single executive view.
-
-Dashboard features include:
-
-- Region Selection Filter
-- Dynamic Time Aggregation (Day, Week, Month)
-- Renewable Energy Comparison
-- Net Production Analysis
-- Energy Source Trends
 
 ## Final Recommendation
 
-Based on the analysis of energy surplus, renewable energy generation, and demand stability, the recommended location for Intel's next data center is:
+**Recommended Region: Northeast**
 
-### [Recommended Region]
+The Northeast emerged as the strongest candidate based on:
 
-Key reasons include:
-
-- Strong energy surplus
-- Reliable energy availability
-- High renewable energy adoption
-- Stable demand patterns
-- Long-term sustainability advantages
+- **Renewable energy leadership** — highest proportion of wind, solar, and hydropower generation among all regions analyzed
+- **Energy surplus** — net generation consistently exceeds regional demand
+- **Generation stability** — low hourly volatility, reducing risk for energy-intensive operations
+- **Long-term sustainability alignment** — positions Intel's infrastructure investment in line with corporate sustainability goals
 
 ---
 
-## Skills Demonstrated
+## Dataset
 
-- Data Analysis
-- Tableau Dashboard Development
-- Business Intelligence
-- Sustainability Analytics
-- Executive Reporting
-- Data-Driven Decision Making
+| Dataset          | Key Fields                                               |
+| ---------------- | -------------------------------------------------------- |
+| Energy Dataset   | Net Generation, Demand, Solar, Wind, Hydro, Region, Date |
+| Energy by Source | Energy Source, MW Generated, Balancing Authority, Region |
 
 ---
 
-## Project Outcome
+## Tools & Skills
 
-This project demonstrates the application of data analytics to a real-world business decision involving infrastructure planning, energy management, and sustainability strategy.
+`Tableau` `Microsoft Excel` `Dashboard Design` `Business Intelligence` `Sustainability Analytics` `Executive Reporting` `Data-Driven Decision Making`
 
-The resulting dashboard provides decision-makers with actionable insights to support future data center investments.
+---
+
+## Repository Structure
+
+```
+intel-data-center-analysis/
+├── tableau/          # Tableau workbook files
+└── README.md
+```
+
+---
+
+_Project completed April 2026 as part of the Global Career Accelerator Data Analysis program._
